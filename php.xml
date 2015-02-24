@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="phpcomment" deleted="false" description="add the user as author" enabled="true" id="org.eclipse.php.ui.editor.templates.phpdoc.author" name="author">@author ${user}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="class statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.class" name="class">class ${class_name}
+{
+    function ${function_name}()
+    {
+        ${cursor};
+    }
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="Clone an object" enabled="true" id="org.eclipse.php.ui.editor.templates.php.cln" name="cln">${dollar}${new_obj} = clone ${dollar}${variable};
+${cursor}</template><template autoinsert="false" context="php-global-members" deleted="false" description="lambda function statement (closure)" enabled="true" id="org.eclipse.php.ui.editor.templates.php.closure" name="closure">function (${parameters}) use (${lexical_variables})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="class statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.cls" name="cls">class ${class_name}
+{
+    function ${function_name}()
+    {
+        ${cursor};
+    }
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="echo a string" enabled="true" id="org.eclipse.php.ui.editor.templates.php.echo" name="eco">echo("${}");
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="elseif statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.elif" name="elif">elseif (${condition})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="else statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.else" name="els">else
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-type-members" deleted="false" description="function statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.fnc" name="fnc">function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="function statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.fnc1" name="fnc">function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="for statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.for" name="for">for (${dollar}${index} = 0; ${dollar}${index} &lt; ${number_variable}; ${dollar}${index}++)
+{
+    ${line_selection}${cursor}
+}</template><template autoinsert="false" context="php-statements" deleted="false" description="foreach statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.foreach" name="fore">foreach (${dollar}${array_expression} as ${dollar}${value})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="foreach with key statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.foreachkey" name="forek">foreach (${dollar}${array_expression} as ${dollar}${key} =&gt; ${dollar}${value})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-type-members" deleted="false" description="function statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.function" name="function">function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="function statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.function1" name="function">function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="if statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.if" name="if">if (${condition})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="instanceof statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.instanceof" name="inst">if (${dollar}${variable} instanceof ${class})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="Trap code output" enabled="true" id="org.eclipse.php.ui.editor.templates.php.my_gc" name="my_gc">ob_start();
+	
+${cursor};
+
+${dollar}${contents} = ob_get_contents();
+ob_end_clean();
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="namespace statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.ns" name="ns">namespace ${name};</template><template autoinsert="false" context="php-type-method-statements" deleted="false" description="Call parent's clone" enabled="true" id="org.eclipse.php.ui.editor.templates.php.pclon" name="pclon">parent::__clone();
+</template><template autoinsert="false" context="php-type-method-statements" deleted="false" description="Call parent constructor" enabled="true" id="org.eclipse.php.ui.editor.templates.php.pcon" name="pcon">parent::__construct();
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="print an expression" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print" name="pr">print ${};
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="prints the current class name" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print.className" name="prc">print("${class_container}");
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="prints the current function name" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print.functionName" name="prf">print("${function_container}");
+${cursor}</template><template autoinsert="true" context="php" deleted="false" description="private function" enabled="true" name="prf">private function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="print with new line" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print.newline" name="prln">print ${}."\n";
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="print a string" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print.string" name="prs">print "${}";
+${cursor}</template><template autoinsert="false" context="php-statements" deleted="false" description="print a value" enabled="true" id="org.eclipse.php.ui.editor.templates.php.print.variable" name="prv">print("\${dollar}${variable} = ". ${dollar}${variable});
+${cursor}</template><template autoinsert="true" context="php" deleted="false" description="public function" enabled="true" name="puf">public function ${function_name}(${dollar}${param})
+{
+    ${cursor};
+}
+
+</template><template autoinsert="false" context="php-statements" deleted="false" description="switch statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.switch" name="swi">switch (${dollar}${variable})
+{
+    case ${value}:
+        ${cursor};
+    break;
+	
+    default:
+        ;
+    break;
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="trait statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.trait" name="trait">trait ${trait_name}
+{
+    function ${function_name}()
+    {
+        ${cursor};
+    }
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="trait statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.trt" name="trt">trait ${trait_name}
+{
+    function ${function_name}()
+    {
+        ${cursor};
+    }
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="try catch block" enabled="true" id="org.eclipse.php.ui.editor.templates.php.try" name="try">try
+{
+    ${cursor}
+}
+catch (${Exception} ${dollar}e)
+{
+}
+</template><template autoinsert="false" context="php-global-members" deleted="false" description="use statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.use" name="use">use ${namespace} as ${alias};</template><template autoinsert="false" context="php-class-members" deleted="false" description="use trait statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.usetrait" name="usetrait">use ${trait_name1}, ${trait_name2}
+{
+    ${trait_name1}::${function_name1} insteadof ${trait_name2};
+    ${trait_name1}::${function_name2} as static ${function_name3};
+    ${trait_name1}::${function_name4} as ${function_name5};
+}
+</template><template autoinsert="false" context="php-statements" deleted="false" description="while loop" enabled="true" id="org.eclipse.php.ui.editor.templates.php.while" name="while">while (${condition})
+{
+    ${cursor};
+}
+</template></templates>
